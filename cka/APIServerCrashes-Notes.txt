@@ -1,0 +1,11 @@
+Investigating Cluster Issues:
+
+Log locations:
+
+1. API Server Crashes: 
+
+/var/log/pods
+/var/log/containers
+crictl ps + crictl logs
+docker ps + docker logs (in case when Docker is used)
+kubelet logs: /var/log/syslog or journalctl
